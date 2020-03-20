@@ -35,3 +35,5 @@ class Train {
 		}
 	}
 }
+
+export default Train;

@@ -1,3 +1,4 @@
+import Train from "./train"
 //TrainCar class is a child class that extends from its parent Train class
 class TrainCar extends Train{
     //This is a child class of train, therefore the name property 
@@ -20,4 +21,5 @@ class TrainCar extends Train{
     }
 }
 
+export default TrainCar;
 

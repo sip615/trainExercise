@@ -1,0 +1,27 @@
+{
+  "name": "trainexercise",
+  "version": "1.0.0",
+  "description": "Train excercise SurfMerchants Dev Interview",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sip615/trainExercise.git"
+  },
+  "keywords": [
+    "Train",
+    "classes"
+  ],
+  "author": "Sunil Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sip615/trainExercise/issues"
+  },
+  "homepage": "https://github.com/sip615/trainExercise#readme",
+  "dependencies": {
+    "http": "0.0.0"
+  }
+}
