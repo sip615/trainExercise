@@ -13,6 +13,9 @@ class Train {
 	get cars() {
 		return this._cars;
 	}
+	get trainLength() {
+		return this._cars.length;
+	}
 	//The following method will be used to build the train after both the train and traincars have been instantiated.
 	buildTrain(trainCar) {
 		//Make sure the train is no longer than 30 cars long
@@ -103,6 +106,9 @@ freightExpress.buildTrain(cabooseOne);
 freightExpress.buildTrain(tankerOne);
 console.log(freightExpress.cars);
 console.log(freightExpress.totalTrainWeight());
+
+//Check to see how long the train is
+console.log(freightExpress.trainLength());
 
 //now keep removing cars until there are no more cars left on the train
 freightExpress.clipTrain();
