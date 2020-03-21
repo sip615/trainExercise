@@ -64,6 +64,7 @@ class TrainCar {
 }
 
 //==========================================================================
+
 //The below is an example of the above code in action. All the results are written to log to the console in the browser.
 
 //create a new instance of TrainCar called boxcarOne
