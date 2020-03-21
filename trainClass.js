@@ -28,7 +28,7 @@ class Train {
 		//Make sure the train is longer than 0
 		if (this._cars.length > 0) {
 			//If so, then take off 1 car from the end of the array (index -1)
-			this._cars.splice(-1, 1);
+			this._cars.pop();
 		} else {
 			//If the train is not greater than 0 cars long, log the following error message.
 			console.log("The train is too short to remove a car");
