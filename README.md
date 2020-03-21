@@ -6,6 +6,8 @@ I wrote this project in JavaScript because it's the OOP language that I'm most w
 
 I originally started with each class in a separate file, and then decided to put all of the code in the same file because it was easier to work with for demonstrative purposes.
 
+train.js is the file you'll want to look at.
+
 ## Getting Started
 
 Download the repository to your local directory. Open the index.html file in your favorite web browser (preferably one that has a good developer console). Then use the developer console to see the magic happening behind the scenes.
