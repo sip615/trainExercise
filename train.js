@@ -37,16 +37,16 @@ class Train {
 			console.log("The train is too short to remove a car");
 		}
 	}
-	prependTrain() {
+	addFrontTrain(car) {
 		if (this.cars.length < 30) {
 			//If the train stays less than 30 cars
-			this.cars.unshift();
+			this.cars.unshift(car);
 		} else {
 			//if the train is already at the maximum length, log the following error message.
 			console.log("The train is already as long as it can be");
 		}
 	}
-	justTheFront() {
+	removeTheFront() {
 		if (this.cars.length > 0) {
 			//make sure the train is at least one car long before adding a new
 			this.cars.shift();
@@ -128,16 +128,16 @@ console.log(freightExpress.cars);
 console.log(freightExpress.totalTrainWeight());
 
 //Check to see how long the train is
-console.log(freightExpress.trainLength());
+console.log(freightExpress.trainLength);
 
 //add a car to the beginning of the train
-freightExpress.cars.prependTrain(boxcarOne);
+freightExpress.addFrontTrain(boxcarOne);
 
 //Check to see that the train car was added to the front of the train
 console.log(freightExpress.cars);
 
 //remove a car from the beginning of the train
-freightExpress.cars.justTheFront();
+freightExpress.removeTheFront();
 
 //Check to see that the train car was removed from the front of the train
 console.log(freightExpress.cars);
