@@ -130,6 +130,18 @@ console.log(freightExpress.totalTrainWeight());
 //Check to see how long the train is
 console.log(freightExpress.trainLength());
 
+//add a car to the beginning of the train
+freightExpress.cars.prependTrain(boxcarOne);
+
+//Check to see that the train car was added to the front of the train
+console.log(freightExpress.cars);
+
+//remove a car from the beginning of the train
+freightExpress.cars.justTheFront();
+
+//Check to see that the train car was removed from the front of the train
+console.log(freightExpress.cars);
+
 //now keep removing cars until there are no more cars left on the train
 freightExpress.clipTrain();
 freightExpress.clipTrain();
