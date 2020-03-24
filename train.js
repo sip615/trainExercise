@@ -18,8 +18,8 @@ class Train {
 	}
 	//The following method will be used to build the train after both the train and traincars have been instantiated.
 	buildTrain(trainCar) {
-		//Make sure the train is no longer than 30 cars long
-		if (this._cars.length <= 30) {
+		//Make sure the train doesn't get longer than 30 cars long
+		if (this._cars.length < 30) {
 			//Add the trainCar you've passed into the method.
 			this._cars.push(trainCar);
 		} else {
@@ -37,6 +37,16 @@ class Train {
 			console.log("The train is too short to remove a car");
 		}
 	}
+	prependTrain() {
+		if (this.cars.length < 30) {
+			//If the train stays less than 30 cars
+			this.cars.unshift();
+		} else {
+			//if the train is already at the maximum length, log the following error message.
+			console.log("The train is already as long as it can be");
+		}
+	}
+
 	totalTrainWeight() {
 		const weightTotal = this._cars.reduce((prev, cur) => {
 			return prev + cur._weight;
