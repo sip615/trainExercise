@@ -46,6 +46,15 @@ class Train {
 			console.log("The train is already as long as it can be");
 		}
 	}
+	justTheFront() {
+		if (this.cars.length > 0) {
+			//make sure the train is at least one car long before adding a new
+			this.cars.shift();
+		} else {
+			//if the train doesn't have any cars, log the following error
+			console.log("The train doesn't have any cars to remove");
+		}
+	}
 
 	totalTrainWeight() {
 		const weightTotal = this._cars.reduce((prev, cur) => {
